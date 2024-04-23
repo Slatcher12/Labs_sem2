@@ -32,8 +32,6 @@ def read_file(input_file):
             pair = line.strip().split()
             if len(pair) == 2:
                 pairs.append(pair)
-
-    print(pairs)
     return pairs
 
 def write_file(output_file, result):
