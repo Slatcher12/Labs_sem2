@@ -17,7 +17,7 @@ def check_amount_of_pairs(input_file, output_file):
     count_pairs_result = count_pairs(pairs)
 
     if count_pairs_result:
-        result = f"amount of pairs is 3"
+        result = f"amount of pairs is {count_pairs_result}"
     else:
         result = "no pairs found."
     write_file(output_file, result)

@@ -1,1 +1,1 @@
-amount of pairs is 3
+amount of pairs is 1

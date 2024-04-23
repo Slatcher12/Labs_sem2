@@ -11,7 +11,7 @@ class TestCheckAmountOfPairs(unittest.TestCase):
                 encoding="utf-8",
         ) as file:
             result = file.readline().strip()
-        self.assertEqual(result, "amount of pairs is 3")
+        self.assertEqual(result, "amount of pairs is 1")
 
 
 if __name__ == "__main__":
