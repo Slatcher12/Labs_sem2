@@ -1,7 +1,7 @@
 class TrieNode:
     def __init__(self) -> None:
         self.children = {}
-        self.end_of_word = False
+        self.end_of_pattern = False
 
 
 class Trie:
@@ -16,16 +16,16 @@ class Trie:
             node = node.children[char]
         node.end_of_word = True
 
-    def search(self, word):
+    def search(self, pattern):
         if self.root.children == {}:
             return False
 
         node = self.root
-        for char in word:
+        for char in pattern:
             if char not in node.children:
                 return False
             node = node.children[char]
-        return node.end_of_word
+        return node.end_of_pattern
 
     def search_prefix(self, prefix):
         if self.root.children == {}:
