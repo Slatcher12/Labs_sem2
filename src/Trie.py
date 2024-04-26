@@ -1,11 +1,11 @@
 class TrieNode:
-    def __init__(self) -> None:
+    def __init__(self):
         self.children = {}
         self.end_of_pattern = False
 
 
 class Trie:
-    def __init__(self) -> None:
+    def __init__(self):
         self.root = TrieNode()
 
     def insert(self, pattern):
