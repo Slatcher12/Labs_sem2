@@ -34,6 +34,7 @@ def read_file(input_file):
                 pairs.append(pair)
     return pairs
 
+
 def write_file(output_file, result):
-    with open(f"D:/Workspace/Labs_sem2/resources\{output_file}", "w", encoding="utf-8") as file:
+    with open(f"D:/Workspace/Labs_sem2/resources/{output_file}", "w", encoding="utf-8") as file:
         file.write(result)
