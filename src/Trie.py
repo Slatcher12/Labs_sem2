@@ -8,13 +8,13 @@ class Trie:
     def __init__(self) -> None:
         self.root = TrieNode()
 
-    def insert(self, word):
+    def insert(self, pattern):
         node = self.root
-        for char in word:
+        for char in pattern:
             if char not in node.children:
                 node.children[char] = TrieNode()
             node = node.children[char]
-        node.end_of_word = True
+        node.end_of_pattern = True
 
     def search(self, pattern):
         if self.root.children == {}:
