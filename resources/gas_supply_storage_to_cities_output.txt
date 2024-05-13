@@ -1,0 +1,2 @@
+('kyiv', ['lviv', 'sudova-vyshnia', 'zhovkva', 'busk'])
+('sudova-vyshnia', ['kyiv', 'lviv'])
