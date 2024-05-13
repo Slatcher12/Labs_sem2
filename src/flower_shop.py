@@ -7,7 +7,7 @@ VIRTUAL_END = 'S'
 
 def create_virtual_start_edges(farms: List[str], lines: List[List[str]]) -> None:
     """
-    Function to create virtual start edges for farms.
+    Create virtual start edges for farms.
     """
     for farm in farms:
         lines.append([VIRTUAL_START, farm, float('inf')])
@@ -15,7 +15,7 @@ def create_virtual_start_edges(farms: List[str], lines: List[List[str]]) -> None
 
 def create_virtual_end_edges(stores: List[str], lines: List[List[str]]) -> None:
     """
-    Function to create virtual end edges for stores.
+    Create virtual end edges for stores.
     """
     for store in stores:
         lines.append([store, VIRTUAL_END, float('inf')])
@@ -23,7 +23,7 @@ def create_virtual_end_edges(stores: List[str], lines: List[List[str]]) -> None:
 
 def flowers_max_flow(input_file: str) -> int | None:
     """
-    Function to calculate the maximum flow of flowers from farms to stores.
+    Calculate the maximum flow of flowers from farms to stores.
     """
     max_flow = 0
     try:
@@ -57,7 +57,7 @@ def flowers_max_flow(input_file: str) -> int | None:
 
 def subtract_the_least_weight_on_the_way(graph: Dict[str, Dict[str, float]], path: List[str]) -> int:
     """
-    Function to subtract the least weight on the way.
+    Subtract the least weight on the way.
     """
     min_weight = float('inf')
     for i in range(len(path) - 1):
@@ -78,7 +78,7 @@ def subtract_the_least_weight_on_the_way(graph: Dict[str, Dict[str, float]], pat
 
 def dfs(graph):
     """
-    Function to perform depth first search.
+    Perform depth first search.
     """
     if not graph:
         return None
@@ -106,7 +106,7 @@ def dfs(graph):
 
 def get_path(from_dict, last_vertex, start_vertex):
     """
-    Function to get the path. using from_dict
+    Get the path. using from_dict
     """
     path = []
     while last_vertex != start_vertex:
@@ -118,7 +118,7 @@ def get_path(from_dict, last_vertex, start_vertex):
 
 def read_data_from_file(filename: str) -> Tuple[List[str], List[str], List[List[str]]]:
     """
-    Function to read data from file.
+    Read data from file.
     """
 
     with open(f"../resources/{filename}", "r", encoding="utf-8") as file:
