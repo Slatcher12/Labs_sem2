@@ -15,9 +15,6 @@ def build_graph(words):
     graph = defaultdict(list)
     for word in words:
         for i in range(len(word)):
-            '''
-            adding edge if words are different
-            '''
             removed_char_word = word[:i] + word[i + 1:]
             graph[word].append(removed_char_word)
     return graph
